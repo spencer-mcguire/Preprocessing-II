@@ -169,30 +169,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  display: flex;
-  width: 100%;
-  border-bottom: 2px dashed #C0C0C0;
-  padding: 2% 0;
-}
-header h1 {
-  width: 50%;
-}
-header nav {
-  width: 100%;
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-left: 30%;
+  width: 100%;
+  padding-left: 33%;
 }
-header nav a {
+nav a {
   color: black;
   text-decoration: none;
   font-size: 1.5rem;
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
@@ -200,6 +191,19 @@ header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 2% 0;
+}
+header h1 {
+  width: 25%;
+}
+.headerBorder {
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin-bottom: 30px 0;
@@ -252,4 +256,14 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background: #17A2B8;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 85%;
+  text-align: center;
 }
