@@ -1,140 +1,136 @@
 header {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  padding: 2% 0;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	padding: 2% 0;
 
-  @media @mobile {
-    flex-direction: column;
-  }
-  
-  h1{
-    width: 25%;
+	@media @mobile {
+		flex-direction: column;
+	}
 
-    @media @mobile {
-      width: 100%;
-      .flex(center, center);
-    }// media
-      
-  }// h1
-}// header
+	h1 {
+		width: 25%;
+
+		@media @mobile {
+			width: 100%;
+			.flex(center, center);
+		} // media
+	} // h1
+} // header
 
 .headerBorder {
-  .borderBottom(@color: @navigation-border);
+	.borderBottom(@color: @navigation-border);
 }
 
 .home {
+	.content-section {
+		margin-bottom: 30px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 
-  .content-section {
-    margin-bottom: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+		@media @mobile {
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+		}
 
-    @media @mobile {
-     flex-direction: column;
-     justify-content: center;
-     width: 100%;   
-    }
+		.welcome {
+			padding: 2.5% 0;
+			.borderBottom();
 
+			@media @mobile {
+				margin: 5% 0;
+			}
+		} // welcome
 
-   .welcome {
-     padding: 2.5% 0;
-     .borderBottom();
-     
-     @media @mobile {
-       margin: 5% 0;
-     }
-   }// welcome
-    
-    .text-content {
-      width: 48%;
-      padding: 2.5% 0;
-      padding-right: 1%;
+		.text-content {
+			width: 48%;
+			padding: 2.5% 0;
+			padding-right: 1%;
 
-      @media @mobile {
-       width: 100%; 
-      }
+			@media @mobile {
+				width: 100%;
+			}
+		} // text content
 
-    }// text content
+		.img-content {
+			width: 48%;
+			padding: 2.5% 0;
+			padding-left: 1%;
 
-    .img-content {
-      width: 48%;
-      padding: 2.5% 0;
-      padding-left: 1%;
+			@media @mobile {
+				width: 100%;
+			}
 
-      @media @mobile {
-        width: 100%; 
-       }
+			img {
+				border-radius: 10px;
+			}
+		}
+	}
 
-      img {
-        border-radius: 10px;
-      }
-    }
-  }
+	.inverse-content {
+		padding-bottom: 30px;
+		.borderBottom();
 
-  .inverse-content {
-    padding-bottom: 30px;
-    .borderBottom();
+		@media @mobile {
+			flex-direction: column-reverse;
+		}
 
-    @media @mobile {
-      flex-direction: column-reverse;
-     }
+		.text-content {
+			padding-left: 1%;
+			padding-right: 0;
+		}
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
+		.img-content {
+			padding-right: 1%;
+			padding-left: 0;
+		}
+	}
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
+	.content-destination {
+		width: 75%;
+		margin: 0 auto 30px;
+		padding: 5% 0;
 
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-    padding: 5% 0;
+		@media @mobile {
+			width: 100%;
+		}
 
-    @media @mobile {
-      width: 100%; 
-     }
-    
-    img {
-      border-radius: 10px;
-    }
-  }
+		img {
+			border-radius: 10px;
+		}
+	}
 
-  .content-pick {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    .borderTop();
-    
-    @media @mobile {
-    flex-direction: column;
-    justify-content: center;
-     }
-    
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
+	.content-pick {
+		padding-top: 30px;
+		display: flex;
+		justify-content: space-between;
+		.borderTop();
 
-      @media @mobile {
-        margin-left: 5%;
-        width: 100%;
-        padding: 0 5%;
-       }
-      
-      .btn {
-        .button();
+		@media @mobile {
+			flex-direction: column;
+			justify-content: center;
+		}
 
-        &:hover {
-          background: darken(@eastern-blue, 10%);
-        }
-      }
-    }// closes destination
-  }// content pick
-}// home
+		.destination {
+			width: 30%;
+			margin-bottom: 30px;
+
+			@media @mobile {
+				margin-left: 5%;
+				width: 100%;
+				padding: 0 5%;
+			}
+
+			.btn {
+				.button();
+
+				&:hover {
+					background: darken(@eastern-blue, 10%);
+				}
+			}
+		} // closes destination
+	} // content pick
+} // home
