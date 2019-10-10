@@ -97,7 +97,6 @@ header {
     width: 75%;
     margin: 0 auto 30px;
     padding: 5% 0;
-    .borderBottom();
 
     @media @mobile {
       width: 100%; 
@@ -109,9 +108,10 @@ header {
   }
 
   .content-pick {
-    // padding-top: 30px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
+    .borderTop();
     
     @media @mobile {
     flex-direction: column;
@@ -130,6 +130,10 @@ header {
       
       .btn {
         .button();
+
+        &:hover {
+          background: darken(@eastern-blue, 10%);
+        }
       }
     }// closes destination
   }// content pick

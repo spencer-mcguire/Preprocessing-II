@@ -195,6 +195,9 @@ nav a {
   text-decoration: none;
   font-size: 1.5rem;
 }
+nav a:hover {
+  color: #808080;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed #C0C0C0;
@@ -298,7 +301,6 @@ header h1 {
   width: 75%;
   margin: 0 auto 30px;
   padding: 5% 0;
-  border-bottom: 2px dashed grey;
 }
 @media (max-width: 500px) {
   .home .content-destination {
@@ -309,8 +311,10 @@ header h1 {
   border-radius: 10px;
 }
 .home .content-pick {
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
+  border-top: 2px dashed grey;
 }
 @media (max-width: 500px) {
   .home .content-pick {
@@ -338,4 +342,7 @@ header h1 {
   border-radius: 10px;
   width: 85%;
   text-align: center;
+}
+.home .content-pick .destination .btn:hover {
+  background: #117a8b;
 }
