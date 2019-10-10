@@ -1,1 +1,31 @@
 // Mixins in here
+
+// General Flex
+.flex (@justify, @align){
+    display: flex; 
+    justify-content: @justify;
+    align-items: @align;
+}
+
+//Borders 
+
+.borderBottom(@size: 2px, @style: dashed, @color: grey) {
+    border-bottom: @size @style @color;
+}
+
+.borderTop(@size: 2px, @style: dashed, @color: grey) {
+    border-top: @size @style @color;
+}
+
+// Buttons
+
+.button (@bg: @eastern-blue, @fontColor: white, @fontSize: 2rem, @padding: 10px){
+    background: @bg;
+    color: @fontColor;
+    font-size: @fontSize;
+    padding: @padding;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 85%;
+    text-align: center;
+}
