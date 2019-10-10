@@ -4,12 +4,21 @@ header {
   margin: 0 auto;
   display: flex;
   padding: 2% 0;
+
+  @media @mobile {
+    flex-direction: column;
+  }
   
   h1{
-      width: 25%;
+    width: 25%;
+
+    @media @mobile {
+      width: 100%;
+      .flex(center, center);
+    }// media
       
-  }
-}
+  }// h1
+}// header
 
 .headerBorder {
   .borderBottom(@color: @navigation-border);
@@ -23,23 +32,41 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;   
+    }
+
 
    .welcome {
      padding: 2.5% 0;
      .borderBottom();
-   }
+     
+     @media @mobile {
+       margin: 5% 0;
+     }
+   }// welcome
     
     .text-content {
       width: 48%;
       padding: 2.5% 0;
       padding-right: 1%;
 
-    }
+      @media @mobile {
+       width: 100%; 
+      }
+
+    }// text content
 
     .img-content {
       width: 48%;
       padding: 2.5% 0;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%; 
+       }
 
       img {
         border-radius: 10px;
@@ -50,6 +77,10 @@ header {
   .inverse-content {
     padding-bottom: 30px;
     .borderBottom();
+
+    @media @mobile {
+      flex-direction: column-reverse;
+     }
 
     .text-content {
       padding-left: 1%;
@@ -65,21 +96,37 @@ header {
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-    padding-top: 2.5%;
+    padding: 5% 0;
+    .borderBottom();
 
+    @media @mobile {
+      width: 100%; 
+     }
+    
     img {
       border-radius: 10px;
     }
   }
 
   .content-pick {
-    padding-top: 30px;
+    // padding-top: 30px;
     display: flex;
     justify-content: space-between;
-
+    
+    @media @mobile {
+    flex-direction: column;
+    justify-content: center;
+     }
+    
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        margin-left: 5%;
+        width: 100%;
+        padding: 0 5%;
+       }
       
       .btn {
         .button();
