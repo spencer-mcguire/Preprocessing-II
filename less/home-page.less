@@ -1,20 +1,27 @@
 .home {
 
   .content-section {
-    margin: 30px 0;
+    margin-bottom: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+
+   .welcome {
+     padding: 2.5% 0;
+     .borderBottom();
+   }
     
     .text-content {
       width: 48%;
+      padding: 2.5% 0;
       padding-right: 1%;
+
     }
 
     .img-content {
       width: 48%;
+      padding: 2.5% 0;
       padding-left: 1%;
 
       img {
@@ -25,7 +32,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .borderBottom();
 
     .text-content {
       padding-left: 1%;
@@ -41,6 +48,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    padding-top: 2.5%;
 
     img {
       border-radius: 10px;
@@ -49,7 +57,6 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 

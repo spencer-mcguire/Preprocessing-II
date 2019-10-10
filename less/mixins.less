@@ -1,1 +1,14 @@
 // Mixins in here
+
+// General Flex
+.flex (@justify, @align){
+    display: flex; 
+    justify-content: @justify;
+    align-items: @align;
+}
+
+//Borders 
+
+.borderBottom(@size: 2px, @style: dashed, @color: grey) {
+    border-bottom: @size @style @color;
+}

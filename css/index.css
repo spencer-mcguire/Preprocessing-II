@@ -169,6 +169,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 2% 0;
+}
+header h1 {
+  width: 50%;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 30%;
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -181,17 +202,23 @@ img {
   padding: 20px;
 }
 .home .content-section {
-  margin: 30px 0;
+  margin-bottom: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.home .content-section .welcome {
+  padding: 2.5% 0;
+  border-bottom: 2px dashed grey;
+}
 .home .content-section .text-content {
   width: 48%;
+  padding: 2.5% 0;
   padding-right: 1%;
 }
 .home .content-section .img-content {
   width: 48%;
+  padding: 2.5% 0;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
@@ -199,7 +226,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed grey;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -212,13 +239,13 @@ img {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+  padding-top: 2.5%;
 }
 .home .content-destination img {
   border-radius: 10px;
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
